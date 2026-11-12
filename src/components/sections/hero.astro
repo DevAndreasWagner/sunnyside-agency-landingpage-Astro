@@ -1,0 +1,33 @@
+---
+import heroMobile from '../../assets/images/mobile/image-header.jpg';
+import heroDesktop from '../../assets/images/desktop/image-header.jpg';
+import Images from '../ui/images.astro'
+
+function HeroImage() {
+    return (`width` >= '768px') ? console.log("Mobile") : console.log("Desktop");
+    ;
+}
+---
+
+<section class="relative w-auto h-auto flex items-center justify-center">
+    <!-- Mobile -->
+    <div class="absolute inset-0  block md:hidden">
+        <Images 
+        imagePath= {heroMobile}
+        altText=''
+        />
+    </div>
+
+    <!-- Desktop -->
+     <div class="absolute inset-0  hidden md:block" >
+        <Images 
+        imagePath= {heroDesktop}
+        altText=''
+        />
+    </div>
+
+    <div class="relative">
+        <h1 class="text-neutral-white text-5xl font-fraunces font-extrabold text-center">WE ARE CREATIVES</h1>
+    </div>
+
+</section>

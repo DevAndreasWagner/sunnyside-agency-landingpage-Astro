@@ -8,14 +8,14 @@
 }
 
 @font-face {
-    font-family: "Fraunces";
+    font-family: "Fraunces-bold";
     src: url(../assets/fonts/Fraunces_72pt-Bold.ttf) format(ttf);
     font-style: bold;
     font-weight: 700;
 }
 
 @font-face {
-    font-family: "Fraunces";
+    font-family: "Fraunces-black";
     src: url(../assets/fonts/Fraunces_72pt-Black.ttf) format(ttf);
     font-style: bold;
     font-weight: 900;
@@ -24,7 +24,8 @@
 
 @theme {
     --font-barlow: "Barlow", sans-serif;
-    --font-fraunces: "Fraunces", serif;
+    --font-fraunces: "Fraunces-bold", serif;
+    --font-fraunces-black: "Fraunces-black", serif;
 
     --color-primary-red400: hsl(7, 99%, 70%);
     --color-primary-yellow500: hsl(51, 100%, 49%);

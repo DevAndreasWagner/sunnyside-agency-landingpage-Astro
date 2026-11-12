@@ -1,9 +1,13 @@
 ---
-import "../../styles/global.css"
+
+import Images from '../ui/images.astro'
+import Logo from '../../assets/images/logo.svg'
 ---
 
-<nav>
-    <div>
-        
-    </div>
+<nav class="h-10 justify-between content-center sticky top-0 z-100">
+    <Images 
+    imagePath={Logo}
+    altText=''
+    class='h-auto w-30'
+    />
 </nav>
