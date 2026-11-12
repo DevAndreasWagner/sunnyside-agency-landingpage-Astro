@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Barlow";
+    src: url(../assets/fonts/Barlow-SemiBold.ttf) format(ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(../assets/fonts/Fraunces_72pt-Bold.ttf) format(ttf);
+    font-style: bold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(../assets/fonts/Fraunces_72pt-Black.ttf) format(ttf);
+    font-style: bold;
+    font-weight: 900;
+}
+
+
+@theme {
+    --font-barlow: "Barlow", sans-serif;
+    --font-fraunces: "Fraunces", serif;
+
+    --color-primary-red400: hsl(7, 99%, 70%);
+    --color-primary-yellow500: hsl(51, 100%, 49%);
+    --color-primary-green800: hsl(167, 40%, 24%);
+    --color-primary-blue800: hsl(198, 62%, 26%);
+    --color-primary-green500: hsl(167, 34%, 41%);
+
+    --color-neutral-grey950: hsl(212, 27%, 19%);
+    --color-neutral-grey600: hsl(213, 9%, 39%);
+    --color-neutral-grey550: hsl(232, 10%, 55%);
+    --color-neutral-grey400: hsl(210, 4%, 67%);
+    --color-neutral-white: hsl(0, 100%, 100%);
+} 
+
+

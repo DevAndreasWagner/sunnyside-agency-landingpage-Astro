@@ -1,4 +1,4 @@
----
+npm ---
 import "../styles/global.css";
 ---
 
@@ -11,8 +11,28 @@ import "../styles/global.css";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+
+		<style>
+			.attribution {
+				font-size: 0.6875rem;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
 	</head>
 	<body>
-		<h1 class="text-4xl text-blue-500 font-bold ">Hallo Astro</h1>
+		<h1 class="text-4xl font-barlow text-blue-500 font-bold">Hallo Astro</h1> 
+
+		<footer class="attribution">
+			Challenge by <a
+				href="https://www.frontendmentor.io/challenges/agency-landing-page-7yVs3B6ef"
+				>Frontend Mentor</a
+			>. Coded by <a
+				href="https://github.com/DevAndreasWagner/sunnyside-agency-landingpage-Astro"
+				>Andreas Wagner</a
+			>.
+		</footer>
 	</body>
 </html>
